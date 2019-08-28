@@ -8,6 +8,11 @@ namespace Model.Framework.Base
 {
     public class Person : Framework.Interface.Iperson
     {
+        public Person(string name,string surname)
+        {
+            Name = name;
+            Surname = surname;
+        }
         public string Name { get ; set ; }
         public string Surname { get ; set ; }
     }
