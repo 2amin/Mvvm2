@@ -16,5 +16,10 @@ namespace Veiw
         {
             InitializeComponent();
         }
+        public VeiwModel.Person Ref_PersonVeiwModel { get; set; }
+        private void btnclick_Click(object sender, EventArgs e)
+        {
+            Ref_PersonVeiwModel = new VeiwModel.Person(txtname.Text, txtsurname.Text);
+        }
     }
 }
